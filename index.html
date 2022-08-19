@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0px;
+        }
+        
+        .outlet {
+            font-family: sans-serif;
+            display: flex;
+        }
+        
+        img {
+            width: 100%;
+            height: 400px;
+            border-radius: 5%
+        }
+        
+        .image {
+            position: absolute;
+            z-index: 2;
+            height: auto;
+            margin-top: 10px;
+            margin-left: 6%;
+            box-shadow: -2px 2px 9px 3px grey;
+            border-radius: 20px;
+        }
+        
+        .image::after {
+            width: 65%;
+            border-radius: 6%;
+            background-color: white;
+            height: 59px;
+            content: " ";
+            background: url("download.jpg");
+            background-position: center center;
+            background-size: 70%;
+            background-repeat: no-repeat;
+            z-index: 3;
+            top: 12pc;
+            background-color: rgb(255, 248, 248);
+            left: 11pc;
+            position: absolute;
+            box-shadow: -2px 2px 9px 3px grey;
+        }
+        
+        input {
+            padding: 10px;
+            width: 100%;
+            border-radius: 34px;
+        }
+        
+        .image::before {
+            background: url("screen-1.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 85%;
+            border-radius: 6%;
+            background-color: white;
+            height: 36px;
+            content: " ";
+            z-index: 3;
+            top: 17pc;
+            right: 8pc;
+            background-size: cover;
+            position: absolute;
+            box-shadow: -2px 2px 9px 3px grey;
+        }
+        
+        .im2 {
+            background: url(loc.png);
+            background-position: center top;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 13%;
+            border-radius: 6%;
+            background-color: white;
+            height: 87px;
+            z-index: 3;
+            margin-top: 128px;
+            right: 16pc;
+            position: absolute;
+            box-shadow: -2px 2px 9px 3px grey;
+        }
+        
+        .left {
+            width: 50%;
+            margin-top: 109px;
+            margin-left: 50px;
+        }
+        
+        h1 {
+            font-size: 45px;
+        }
+        
+        .right {
+            position: relative;
+            width: 50%;
+            margin-top: 109px;
+            margin-left: 50px;
+        }
+        
+        .grad {
+            box-shadow: 2px 23px 104px 69px #fff2a8;
+            border: transparent;
+            width: 38vw;
+            right: 211px;
+            border-radius: 0px 0px 9pc 10pc;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .st {
+            background-color: #10100e;
+            position: absolute;
+            padding: 8px;
+            color: white;
+            top: 0;
+            right: -20px;
+            font-weight: 700;
+            transform: translateX(2px);
+            border-radius: 39px;
+            margin: 0px;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+        }
+        
+        .footer {
+            padding-left: 100px;
+            position: absolute;
+            left: 0;
+            display: flex;
+            bottom: 0;
+        }
+        
+        .fb,
+        .insta,
+        .tweet,
+        .you {
+            cursor: pointer;
+            background-color: transparent;
+            border-radius: 100%;
+            border: 1px solid darkslategrey;
+            font-size: large;
+            padding: 10px;
+        }
+        
+        .in {
+            position: relative;
+            width: 395px;
+        }
+        
+        .links {
+            display: flex;
+            position: absolute;
+            font-family: sans-serif;
+            bottom: 10px;
+            right: 0;
+            padding-right: 128px;
+            bottom: 0;
+        }
+        
+        .s {
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        .s:hover {
+            border-bottom: 2px solid black;
+        }
+        
+        @media screen and (max-width:600px) {
+            .image::before,
+            .image::after,
+            .im2,
+            .main,
+            .image {
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grad"></div>
+    <div class="outlet">
+
+        <div class="left">
+            <h5>--Coming Soon</h5>
+            <h1>Get Notified <br>When we Launch </h1>
+            <div class="in">
+                <input type="email" placeholder="Enter your email address"><button class="st">Notify Me</button></div>
+            <p style="font-size: large;
+            padding-top: 43px;">*Don't worry we will not spam you :)</p>
+        </div>
+        <div class="right ">
+            <div class="main " style="position:absolute; top:6pc;height: 312px; z-index: 1; width: 50%; background-color: yellow; border-radius: 100%; "></div>
+            <div class="image "><img src="Product info.png " alt=" "></div>
+            <div class="im2 "></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer"><button class="fb "><i class="fa fa-facebook "></i></button><button class="insta "><i class="fa fa-instagram "></i></button><button class="tweet "><i class="fa fa-twitter-square "></i></button><button class="you
+                "><i class="fa fa-youtube "></i></button></div>
+        <div class="links">
+            <div class="s">
+                <a>FAQ</a></div>
+            <div class="s">
+                <a>Privacy Policy</a>
+            </div>
+            <div class="s">Email Us</div>
+        </div>
+    </footer>
+</body>
+
+</html>
